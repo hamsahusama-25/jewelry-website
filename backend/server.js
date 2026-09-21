@@ -1,10 +1,5 @@
-const http= require("http")
-const express= require("express")
-const app =express() 
-const mongoose= require("mongoose")
+const path =require("path")
 
-app.use(express.json())
+const findPath= path.join(__dirname,"data","hamsah","Ali","users.txt")
 
-app.listen(3000,()=>{
-    console.log("server is working")
-})
+console.log(findPath)
