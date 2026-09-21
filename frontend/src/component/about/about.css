@@ -1,0 +1,42 @@
+.section{
+    width: 100%;
+    padding: 20px 0 ;
+    background-color: #f7f7f7;
+    margin-top: 50px;
+}
+.about-section{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-section .data{
+    width: 30%;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.about-section .data span{
+    font-weight: 700;
+    font-size: larger;
+}
+
+
+@media (max-width: 768px) {
+    .about-section{
+        flex-direction: column;
+        justify-content: space-around;
+}
+.about-section .data{
+    width: 90%;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.about-section .image {
+    height: 300px;
+}
+
+}

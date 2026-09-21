@@ -1,0 +1,130 @@
+.postDetails-section{
+    margin-top: 5em;
+
+}
+.item-info{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid var(--background-color);
+}
+.item-info .image{
+    width: 50vw;
+    height: 35vw;
+}
+.item-info .image img{
+    width: 100%;
+    height: 100%;
+}
+.item-name{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 10px;
+}
+.item-name h1{
+    font-size: 35px;
+}
+.details{
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 2em;
+    padding: 20px;
+}
+.numbersOfItem{
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid var(--carbon-black);
+    margin-top: 10px;
+
+}
+.numbersOfItem button{
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid var(--carbon-black);
+    background: transparent;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.numbersOfItem button:hover{
+    background-color: black;
+    color: #fff;
+}
+.numbersOfItem p{
+    font-size: 25px;
+}
+
+ .PostShop{
+    display: block;
+    padding: 10px 30px;
+    border-radius: 5px;
+    width: 250px;
+    font-size: 18px;
+    background-color: black;
+    color: #fff;
+    transition: .2s ease-in-out;
+    box-shadow: 3px 5px 20px  #ddd ;
+}
+.PostShop:hover{
+    border: 1px solid var(--background-color);
+    color: var(--background-color);
+    background-color: #fff;
+}
+.info{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 500;
+}
+.info div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.item-name .price{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/* You May Also Like */
+
+.YouMayAlsoLike{
+    margin-top: 9em;
+    text-align: start;
+
+}
+.YouMayAlsoLike h2{
+    position: relative;
+}
+.YouMayAlsoLike h2::after{
+    position: absolute;
+    content: "";
+    width: 250px;
+    height: 2px;
+    background-color: var(--background-color);
+    bottom: -13px;
+    left: 0;
+}
+
+.YouMayAlsoLike .cards{
+    justify-content: start;
+    gap: 50px;
+
+}
+.YouMayAlsoLike .cards .card{
+    gap: 10px;
+}
+.YouMayAlsoLike .cards .card button{
+    font-size: 15px;
+    padding: 5px 0;
+}

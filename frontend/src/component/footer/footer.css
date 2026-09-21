@@ -1,0 +1,239 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.footer{
+    background:#1f1d1d;
+    color:#ddd;
+    padding:70px 0 25px;
+}
+
+.containerr{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+}
+
+/* =======================
+Top Section
+======================= */
+
+.footer-top{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    gap:50px;
+    padding-bottom:60px;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.logoo{
+    font-size:42px;
+    color:#fff;
+    margin-bottom:25px;
+    font-family:serif;
+}
+
+.footer-about p{
+    line-height:1.8;
+    color:#aaa;
+    margin-bottom:18px;
+}
+
+.footer-about h3{
+    color:#fff;
+    margin:35px 0 10px;
+    font-size:25px;
+}
+
+.newsletter{
+    display:flex;
+    margin-top:20px;
+}
+
+.newsletter input{
+    flex:1;
+    height:55px;
+    border:none;
+    padding:0 20px;
+    border-radius:50px 0 0 50px;
+    outline:none;
+    font-size:16px;
+}
+
+.newsletter button{
+    width:70px;
+    border:none;
+    background:#fff;
+    cursor:pointer;
+    border-radius:0 50px 50px 0;
+    font-size:22px;
+}
+
+/* =======================
+Links
+======================= */
+
+.footer-links{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.footer-links h4{
+    color:#fff;
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+.footer-links a{
+    color:#aaa;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:#fff;
+    transform:translateX(5px);
+}
+
+/* =======================
+Contact Cards
+======================= */
+
+.footer-contact{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    padding:45px 0;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.contact-card{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.contact-card svg{
+    width:65px;
+    height:65px;
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:50%;
+    padding:18px;
+    color:white;
+    font-size:28px;
+}
+
+.contact-card h5{
+    color:#fff;
+    margin-bottom:8px;
+    font-size:18px;
+}
+
+.contact-card p{
+    color:#999;
+    font-size:15px;
+}
+
+/* =======================
+Bottom
+======================= */
+
+.footer-bottom{
+    text-align:center;
+    padding-top:35px;
+}
+
+.footer-menu{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    list-style:none;
+    margin-bottom:30px;
+    flex-wrap:wrap;
+}
+
+.footer-menu a{
+    color:#ccc;
+    text-decoration:none;
+}
+
+.footer-menu a:hover{
+    color:white;
+}
+
+.socials{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    margin-bottom:25px;
+}
+
+.socials a{
+    width:45px;
+    height:45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:50%;
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.socials a:hover{
+    background:white;
+    color:#111;
+}
+
+.copyright{
+    color:#888;
+    font-size:15px;
+}
+
+/* =======================
+Responsive
+======================= */
+
+@media(max-width:992px){
+
+.footer-top{
+    grid-template-columns:1fr 1fr;
+}
+
+.footer-contact{
+    grid-template-columns:1fr 1fr;
+}
+
+}
+
+@media(max-width:768px){
+
+.footer-top{
+    grid-template-columns:1fr;
+}
+
+.footer-contact{
+    grid-template-columns:1fr;
+}
+
+.footer-menu{
+    gap:18px;
+}
+
+.logo{
+    font-size:36px;
+}
+
+.footer-about h3{
+    font-size:26px;
+}
+
+.newsletter input{
+    height:50px;
+}
+
+}

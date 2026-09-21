@@ -1,0 +1,20 @@
+
+.magnifier-container{
+    position: relative;
+    height: 34vw;
+    width: 40vw;
+    cursor: none;
+}
+
+.magnifier-container .magnifier{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid white; 
+    background-repeat: no-repeat; 
+    background-size: 250%;
+    background-repeat: no-repeat;
+    pointer-events: none;
+
+}

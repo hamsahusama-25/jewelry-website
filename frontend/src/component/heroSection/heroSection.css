@@ -1,0 +1,102 @@
+.hero{
+    width: 100%;
+    min-height: calc(100vh - 60px);
+    background: url('/public/assets/Henri\ Daussi\ Luxury\ Diamond\ Jewelry.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: bottom;
+    position: relative;
+}
+.cover{
+    position: absolute;
+    background-color: #1d1d1d9e;
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+
+}
+.cover .data{
+    width: 50vw;
+    min-width:350px;
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 3em;
+}
+.cover .data h1{
+    font-size: 35px;
+}
+.cover .data p{
+    font-size: 22px;
+    line-height: 25px;
+    word-spacing: 3px;
+}
+.cover .data button{
+    display: block;
+    padding: 10px 30px;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 18px;
+}
+.cover .data .images{
+    width: 80%;
+    height: 100px;
+    display: flex;
+    gap: 3%;
+}
+.cover .data .images img{
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+.hero-img{
+    width: 40%;
+    margin: auto;
+    display: block;
+
+}
+@media (max-width: 768px) {
+    .cover{
+        flex-direction:column-reverse;
+    }
+    .cover .data{
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.cover .data h1{
+    font-size: 30px;
+}
+.cover .data p{
+    font-size: 22px;
+    line-height: 25px;
+    word-spacing: 3px;
+}
+.cover .data button{
+    display: block;
+    padding: 10px 30px;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 18px;
+}
+.cover .data .images{
+    width: 70%;
+    height: 80px;
+    display: flex;
+    gap: 3%;
+}
+.cover .data .images img{
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+.hero-img{
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 10px;
+
+}
+}

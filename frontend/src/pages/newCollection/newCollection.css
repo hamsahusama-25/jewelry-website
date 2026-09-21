@@ -1,0 +1,118 @@
+
+.newCollection .container .filter{
+    margin-top: 40px;
+    text-align: left;
+}
+.newCollection .container .filter input{
+    width: 300px;
+    height: 30px;
+    border-bottom: 2px solid #ddd;
+}
+.newCollection .container .filter input::placeholder{
+    font-size: larger;
+}
+.newCollection .container .filter input:hover{
+    border-bottom: 2px solid var(--background-color);
+}
+.newCollection .container .filter .category{
+    display: flex;
+    gap: 60px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.newCollection .container .filter .category div{
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: 2px solid var(--background-color);
+    transition: .4s;
+    cursor: pointer;
+}
+.newCollection .container .filter .category a{
+    color: #000;
+}
+.newCollection .container .filter .category div:hover {
+    background-color: var(--carbon-black);
+}
+
+.newCollection .container .filter .category div:hover a{
+    color: #fff;
+}
+
+.collection-cards{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px;
+}
+.collection-card{
+    width: 300px;
+    height: 370px;
+    border: 1px solid rgb(47, 46, 46);
+    border-radius: 3px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    color: #000;
+    text-align: left;
+    padding: 5px;
+    transition: 1s ease-in-out;
+    position: relative;;
+}
+.collection-card .icons{
+    display: none;
+
+}
+.collection-card:hover img{
+    /* filter: grayscale(100%) blur(3px); */
+    opacity: .4;
+}
+.collection-card:hover .icons {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+    z-index: 100;
+    
+}
+.collection-card:hover .icons button{
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+}
+.collection-card:hover .icons button:last-child{
+    background-color: var(--background-color);
+    color: #fff;
+}
+.collection-card:hover .icons button:hover{
+    box-shadow: 2px 8px 32px rgba(0, 0, 0, 0.197);
+}
+
+.collection-card p{
+    overflow: hidden;
+    padding: 5px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.collection-card .price{
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.active{
+    color: white;
+    background-color: var(--background-color);
+}
